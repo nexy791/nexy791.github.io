@@ -19,7 +19,7 @@ let ua_stack_h2_2 = "Детальніше"
 
 let ua_work_exp = "Досвід роботи"
 let ua_work_desc = "Маю бажання навчатись новому, покращувати знання і працювати в цікавих проектах. <br> <b>🧑🏻‍💻 Відкрит для пропозицій </b> Office Kyiv / Remote Job"
-
+let ua_pdf = "Завантажити PDF-копію"
 
 
 
@@ -44,7 +44,7 @@ let ru_stack_h2_2 = "Подробнее"
 
 let ru_work_exp = "Опыт работы"
 let ru_work_desc = "Имею огромное желание учиться новому, улучшать знания и работать в интересных проектах.<br><b>🧑🏻‍💻 Открыт для предложений</b> Office Kyiv / Remote Job "
-
+let ru_pdf = "Скачать PDF-копию резюме"
 
 
 
@@ -69,7 +69,7 @@ let en_stack_h2_2 = "More"
 
 let en_work_exp = "Work experience"
 let en_work_desc = "I have a huge interest to learn new things, improve my knowledge and work in interesting projects.<br><b>🧑🏻‍💻 Open to suggestions</b> Office Kyiv / Remote Job "
-
+let en_pdf = "Download PDF copy"
 
 $(function() {
     updateText()
@@ -121,6 +121,8 @@ function updateText() {
         $("#work_exp").html(ua_work_exp)
         $("#work_desc").html(ua_work_desc)
 
+        $("#pdf").html(ua_pdf)
+
     }else if(lang === "en"){
 
         $("#ru").html("RU")
@@ -151,6 +153,8 @@ function updateText() {
         $("#work_exp").html(en_work_exp)
         $("#work_desc").html(en_work_desc)
 
+        $("#pdf").html(en_pdf)
+
     }else{
         window.location.hash = "ru"
         $("#ru").html("<b>RU</b>")
@@ -180,6 +184,7 @@ function updateText() {
         $("#work_exp").html(ru_work_exp)
         $("#work_desc").html(ru_work_desc)
 
+        $("#pdf").html(ru_pdf)
 
     }
 }
