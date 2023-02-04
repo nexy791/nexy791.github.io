@@ -1,6 +1,6 @@
 
-let ua_name = "Олександр Нексі 🇺🇦"
-let ua_short_bio = "18yo, <b>Junior Android Developer</b><br>з Києва, Україна"
+let ua_name = "Олександр Ясінський 🇺🇦"
+let ua_short_bio = "19yo, <b>Junior Android Developer</b><br>з Києва, Україна"
 
 let ua_about_h1 = "Про мене";
 let ua_about_edu = 'Навчаюсь на інженерії програмного забезпечення в <a href="https://istu.edu.ua/" target="_blank"> International Scientific and Technical University</a>'
@@ -18,13 +18,13 @@ let ua_stack_h2_1 = "Загальне"
 let ua_stack_h2_2 = "Детальніше"
 
 let ua_work_exp = "Досвід роботи"
-let ua_work_desc = "Маю бажання навчатись новому, покращувати знання і працювати в цікавих проектах. <br> <b>🧑🏻‍💻 Відкрит для пропозицій </b> Office Kyiv / Remote Job"
+let ua_work_desc = "Маю бажання навчатись новому, покращувати знання і працювати в цікавих проектах. <br> <b>🧑🏻‍💻 Відкрит для пропозицій </b> Part Time / Remote Job"
 let ua_pdf = "Завантажити PDF-копію"
 
 
 
-let ru_name = "Александр Некси 🇺🇦";
-let ru_short_bio = "18yo, <b>Junior Android Developer</b><br>из Киева, Украина";
+let ru_name = "Александр Ясинский 🇺🇦";
+let ru_short_bio = "19yo, <b>Junior Android Developer</b><br>из Киева, Украина";
 
 let ru_about_h1 = "Обо мне";
 let ru_about_edu = 'Учусь на инженерию программного обеспечения в <a href="https://istu.edu.ua/" target="_blank">International Scientific and Technical University</a>';
@@ -43,13 +43,13 @@ let ru_stack_h2_1 = "Общее"
 let ru_stack_h2_2 = "Подробнее"
 
 let ru_work_exp = "Опыт работы"
-let ru_work_desc = "Имею огромное желание учиться новому, улучшать знания и работать в интересных проектах.<br><b>🧑🏻‍💻 Открыт для предложений</b> Office Kyiv / Remote Job "
+let ru_work_desc = "Имею огромное желание учиться новому, улучшать знания и работать в интересных проектах.<br><b>🧑🏻‍💻 Открыт для предложений</b> Part Time / Remote Job "
 let ru_pdf = "Скачать PDF-копию резюме"
 
 
 
-let en_name = "Alexander Nexy 🇺🇦";
-let en_short_bio = "18yo, <b>Junior Android Developer</b><br> from Kyiv, Ukraine";
+let en_name = "Olexandr Yasinskyi 🇺🇦";
+let en_short_bio = "19yo, <b>Junior Android Developer</b><br> from Kyiv, Ukraine";
 
 let en_about_h1 = "About me";
 let en_about_edu = 'Im studying software engineering at <a href="https://istu.edu.ua/" target="_blank">International Scientific and Technical University</a>';
@@ -68,7 +68,7 @@ let en_stack_h2_1 = "General"
 let en_stack_h2_2 = "More"
 
 let en_work_exp = "Work experience"
-let en_work_desc = "I have a huge interest to learn new things, improve my knowledge and work in interesting projects.<br><b>🧑🏻‍💻 Open to suggestions</b> Office Kyiv / Remote Job "
+let en_work_desc = "I have a huge interest to learn new things, improve my knowledge and work in interesting projects.<br><b>🧑🏻‍💻 Open to suggestions</b> Part Time / Remote Job "
 let en_pdf = "Download PDF copy"
 
 $(function() {
@@ -105,14 +105,14 @@ function updateText() {
         $("#about_h1").html(ua_about_h1)
         $("#about_edu").html(ua_about_edu)
         $('#about_me').html(ua_about_me)
-        $("#about_read").html(ua_about_read)
+       // $("#about_read").html(ua_about_read)
         $("#about_fun_fact").html(ua_about_fun_fact)
         $('#about_my_works').html(ua_about_my_works)
 
         $("#stack_h1").html(ua_stack_h1)
         $("#stack_description").html(ua_stack_desc)
         $("#l1").html(ua_l1)
-        $("#l2").html(ua_l2)
+       // $("#l2").html(ua_l2)
         $("#l3").html(ua_l3)
 
         $("#stack_h2_1").html(ua_stack_h2_1)
@@ -136,7 +136,7 @@ function updateText() {
         $("#about_h1").html(en_about_h1)
         $("#about_edu").html(en_about_edu)
         $('#about_me').html(en_about_me)
-        $("#about_read").html(en_about_read)
+        //$("#about_read").html(en_about_read)
         $("#about_fun_fact").html(en_about_fun_fact)
         $('#about_my_works').html(en_about_my_works)
 
@@ -144,7 +144,7 @@ function updateText() {
         $("#stack_h1").html(en_stack_h1)
         $("#stack_description").html(en_stack_desc)
         $("#l1").html(en_l1)
-        $("#l2").html(en_l2)
+       // $("#l2").html(en_l2)
         $("#l3").html(en_l3)
 
         $("#stack_h2_1").html(en_stack_h2_1)
@@ -167,7 +167,7 @@ function updateText() {
         $("#about_h1").html(ru_about_h1)
         $("#about_edu").html(ru_about_edu)
         $('#about_me').html(ru_about_me)
-        $("#about_read").html(ru_about_read)
+      //  $("#about_read").html(ru_about_read)
         $("#about_fun_fact").html(ru_about_fun_fact)
         $('#about_my_works').html(ru_about_my_works)
 
@@ -175,7 +175,7 @@ function updateText() {
         $("#stack_h1").html(ru_stack_h1)
         $("#stack_description").html(ru_stack_desc)
         $("#l1").html(ru_l1)
-        $("#l2").html(ru_l2)
+       // $("#l2").html(ru_l2)
         $("#l3").html(ru_l3)
 
         $("#stack_h2_1").html(ru_stack_h2_1)
