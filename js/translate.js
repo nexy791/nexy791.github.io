@@ -1,6 +1,6 @@
 
 let ua_name = "Олександр Ясінський 🇺🇦"
-let ua_short_bio = "19yo, <b>Junior Android Developer</b><br>з Києва, Україна"
+let ua_short_bio = "19yo, <b>Android Developer</b><br>з Києва, Україна"
 
 let ua_about_h1 = "Про мене";
 let ua_about_edu = 'Навчаюсь на інженерії програмного забезпечення в <a href="https://istu.edu.ua/" target="_blank"> International Scientific and Technical University</a>'
@@ -24,7 +24,7 @@ let ua_pdf = "Завантажити PDF-копію"
 
 
 let ru_name = "Александр Ясинский 🇺🇦";
-let ru_short_bio = "19yo, <b>Junior Android Developer</b><br>из Киева, Украина";
+let ru_short_bio = "19yo, <b>Android Developer</b><br>из Киева, Украина";
 
 let ru_about_h1 = "Обо мне";
 let ru_about_edu = 'Учусь на инженерию программного обеспечения в <a href="https://istu.edu.ua/" target="_blank">International Scientific and Technical University</a>';
@@ -49,7 +49,7 @@ let ru_pdf = "Скачать PDF-копию резюме"
 
 
 let en_name = "Olexandr Yasinskyi 🇺🇦";
-let en_short_bio = "19yo, <b>Junior Android Developer</b><br> from Kyiv, Ukraine";
+let en_short_bio = "19yo, <b>Android Developer</b><br> from Kyiv, Ukraine";
 
 let en_about_h1 = "About me";
 let en_about_edu = 'Im studying software engineering at <a href="https://istu.edu.ua/" target="_blank">International Scientific and Technical University</a>';
