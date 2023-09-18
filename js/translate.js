@@ -1,4 +1,3 @@
-
 let ua_name = "Олександр Ясінський 🇺🇦"
 let ua_short_bio = "19yo, <b>Android Developer</b><br>з Києва, Україна"
 
@@ -20,32 +19,6 @@ let ua_stack_h2_2 = "Детальніше"
 let ua_work_exp = "Досвід роботи"
 let ua_work_desc = "Маю бажання навчатись новому, покращувати знання і працювати в цікавих проектах. <br> <b>🧑🏻‍💻 Відкрит для пропозицій </b> Part Time / Remote Job"
 let ua_pdf = "Завантажити PDF-копію"
-
-
-
-let ru_name = "Александр Ясинский 🇺🇦";
-let ru_short_bio = "19yo, <b>Android Developer</b><br>из Киева, Украина";
-
-let ru_about_h1 = "Обо мне";
-let ru_about_edu = 'Учусь на инженерию программного обеспечения в <a href="https://istu.edu.ua/" target="_blank">International Scientific and Technical University</a>';
-let ru_about_me = 'Последние 2 года занимаюсь разработкой под Android, изучаю Kotlin и современный подход к разработке - архитектуру, Android Jetpack. Активно участвую в интересных проектах. Есть опыт работы в коммерческих приложениях'
-let ru_about_read = 'Читаю <a href="https://bookmate.com/@nexy791/books/all" target="_blank">тут</a> в свободное время'
-let ru_about_fun_fact = '<b>Fun Fact:</b> В 14 лет опубликовал первое приложение в Google Play 💎'
-let ru_about_my_works = 'Мои работы и мою активность можно увидеть по ссылкам ниже'
-
-
-let ru_stack_h1 = "Стек"
-let ru_stack_desc = "Технологии, которые я активно использую или был опыт работы с ними"
-let ru_l1 = "Украинский - Носитель 🇺🇦"
-let ru_l2 = "Русский - Уровень Носителя 🇷🇺"
-let ru_l3 = "Английский - B2 🇺🇸"
-let ru_stack_h2_1 = "Общее"
-let ru_stack_h2_2 = "Подробнее"
-
-let ru_work_exp = "Опыт работы"
-let ru_work_desc = "Имею огромное желание учиться новому, улучшать знания и работать в интересных проектах.<br><b>🧑🏻‍💻 Открыт для предложений</b> Part Time / Remote Job "
-let ru_pdf = "Скачать PDF-копию резюме"
-
 
 
 let en_name = "Olexandr Yasinskyi 🇺🇦";
@@ -71,18 +44,15 @@ let en_work_exp = "Work experience"
 let en_work_desc = "I have a huge interest to learn new things, improve my knowledge and work in interesting projects.<br><b>🧑🏻‍💻 Open to suggestions</b> Part Time / Remote Job "
 let en_pdf = "Download PDF copy"
 
-$(function() {
+$(function () {
+    return
     updateText()
 
-    $('#ru').click(function() {
-        window.location.hash = "ru"
-        updateText()
-    });
-    $('#en').click(function() {
+    $('#en').click(function () {
         window.location.hash = "en"
         updateText()
     });
-    $('#ua').click(function() {
+    $('#ua').click(function () {
         window.location.hash = "ua"
         updateText()
     });
@@ -92,40 +62,8 @@ $(function() {
 function updateText() {
     $(window).scrollTop(0);
     let lang = window.location.hash.split('#')[1]
+    if (lang === "en") {
 
-    if(lang === "ua"){
-
-        $("#ru").html("RU")
-        $("#ua").html("<b>UA</b>")
-        $("#en").html("EN")
-
-        $("#name").html(ua_name)
-        $("#short_bio").html(ua_short_bio)
-
-        $("#about_h1").html(ua_about_h1)
-        $("#about_edu").html(ua_about_edu)
-        $('#about_me').html(ua_about_me)
-       // $("#about_read").html(ua_about_read)
-        $("#about_fun_fact").html(ua_about_fun_fact)
-        $('#about_my_works').html(ua_about_my_works)
-
-        $("#stack_h1").html(ua_stack_h1)
-        $("#stack_description").html(ua_stack_desc)
-        $("#l1").html(ua_l1)
-       // $("#l2").html(ua_l2)
-        $("#l3").html(ua_l3)
-
-        $("#stack_h2_1").html(ua_stack_h2_1)
-        $("#stack_h2_2").html(ua_stack_h2_2)
-
-        $("#work_exp").html(ua_work_exp)
-        $("#work_desc").html(ua_work_desc)
-
-        $("#pdf").html(ua_pdf)
-
-    }else if(lang === "en"){
-
-        $("#ru").html("RU")
         $("#ua").html("UA")
         $("#en").html("<b>EN</b>")
 
@@ -144,7 +82,7 @@ function updateText() {
         $("#stack_h1").html(en_stack_h1)
         $("#stack_description").html(en_stack_desc)
         $("#l1").html(en_l1)
-       // $("#l2").html(en_l2)
+        // $("#l2").html(en_l2)
         $("#l3").html(en_l3)
 
         $("#stack_h2_1").html(en_stack_h2_1)
@@ -155,36 +93,34 @@ function updateText() {
 
         $("#pdf").html(en_pdf)
 
-    }else{
-        window.location.hash = "ru"
-        $("#ru").html("<b>RU</b>")
-        $("#ua").html("UA")
+    } else {
+
+        $("#ua").html("<b>UA</b>")
         $("#en").html("EN")
 
-        $("#name").html(ru_name)
-        $("#short_bio").html(ru_short_bio)
+        $("#name").html(ua_name)
+        $("#short_bio").html(ua_short_bio)
 
-        $("#about_h1").html(ru_about_h1)
-        $("#about_edu").html(ru_about_edu)
-        $('#about_me').html(ru_about_me)
-      //  $("#about_read").html(ru_about_read)
-        $("#about_fun_fact").html(ru_about_fun_fact)
-        $('#about_my_works').html(ru_about_my_works)
+        $("#about_h1").html(ua_about_h1)
+        $("#about_edu").html(ua_about_edu)
+        $('#about_me').html(ua_about_me)
+        // $("#about_read").html(ua_about_read)
+        $("#about_fun_fact").html(ua_about_fun_fact)
+        $('#about_my_works').html(ua_about_my_works)
 
+        $("#stack_h1").html(ua_stack_h1)
+        $("#stack_description").html(ua_stack_desc)
+        $("#l1").html(ua_l1)
+        // $("#l2").html(ua_l2)
+        $("#l3").html(ua_l3)
 
-        $("#stack_h1").html(ru_stack_h1)
-        $("#stack_description").html(ru_stack_desc)
-        $("#l1").html(ru_l1)
-       // $("#l2").html(ru_l2)
-        $("#l3").html(ru_l3)
+        $("#stack_h2_1").html(ua_stack_h2_1)
+        $("#stack_h2_2").html(ua_stack_h2_2)
 
-        $("#stack_h2_1").html(ru_stack_h2_1)
-        $("#stack_h2_2").html(ru_stack_h2_2)
+        $("#work_exp").html(ua_work_exp)
+        $("#work_desc").html(ua_work_desc)
 
-        $("#work_exp").html(ru_work_exp)
-        $("#work_desc").html(ru_work_desc)
-
-        $("#pdf").html(ru_pdf)
+        $("#pdf").html(ua_pdf)
 
     }
 }
