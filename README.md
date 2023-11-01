@@ -3,8 +3,6 @@
 
 Simple code for a personal website [nexy791.github.io](https://nexy791.github.io)
 
-![image](./screenshot.png)
-
 # Author.
 
 * GitHub: [@nexy791](https://github.com/nexy791)
